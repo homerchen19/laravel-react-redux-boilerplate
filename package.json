@@ -1,17 +1,16 @@
 {
-  "name": "laravel-react-redux-scaffolding",
-  "description": "",
+  "name": "laravel-react-redux-boilerplate",
+  "description": "A simple boilerplate for React and Redux with Laravel as backend server.",
   "license": "MIT",
   "author": "xxhomey19",
+  "homepage": "https://github.com/xxhomey19/laravel-react-redux-boilerplate",
   "version": "0.0.1",
   "scripts": {
+    "build": "npm run production",
     "precommit": "node_modules/.bin/lint-staged",
     "dev": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "lint": "node_modules/.bin/eslint resources/assets/js webpack.mix.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
