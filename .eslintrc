@@ -19,9 +19,11 @@
         "global-require": "warn",
         "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
         "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
         "react/prefer-stateless-function": "off",
         "react/no-unescaped-entities": "off",
         "react/jsx-one-expression-per-line": "off",
+        "react/destructuring-assignment": "off",
         "import/prefer-default-export": "off"
     },
     "plugins": ["react", "babel", "prettier"]

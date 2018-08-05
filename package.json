@@ -1,5 +1,5 @@
 {
-  "name": "laravel-react-todolist",
+  "name": "laravel-react-redux-scaffolding",
   "description": "",
   "license": "MIT",
   "author": "xxhomey19",
@@ -21,8 +21,13 @@
     "laravel-mix": "^2.1.11",
     "lodash": "^4.17.10",
     "popper.js": "^1.14.4",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
