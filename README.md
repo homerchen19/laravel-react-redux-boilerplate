@@ -12,6 +12,7 @@ A simple boilerplate for [React](https://reactjs.org/) and [Redux](https://redux
 ## Features
 
 -   **[Laravel 5.6](https://laravel.com/docs/5.6)**: Back-end server framwork.
+-   **[Laradock](http://laradock.io/)**: Full PHP development environment for Docker.
 -   **[React 16](https://reactjs.org/)**: Front-end framework.
 -   **[Redux 4](https://redux.js.org/)**: React state management.
 -   **[Boostrap 4](https://getbootstrap.com/)**: Front-end UI kit.
@@ -31,6 +32,61 @@ $ composer install
 $ yarn // or npm install
 $ cp .env.example .env
 $ php artisan key:generate
+```
+
+## Laradock
+
+It is a full PHP development environment for [Docker](https://www.docker.com/).
+
+For detailed information, please check Laradock [official site](http://laradock.io/).
+
+Before starting, make sure you have installed [Docker](https://www.docker.com/).
+
+### Setup
+
+Create `.env` file for Laradock.
+
+```sh
+$ cd laradock
+$ cp env.example .env
+```
+
+##### Boot up Nginx and MySQL 5.7
+
+1. Change **MYSQL_VERSION** to **5.7** in `laradock/.env`.
+
+2. Boot up [Nginx](https://nginx.org/en/) and [MySQL](https://www.mysql.com/).
+
+```sh
+$ docker-compose up -d nginx mysql
+```
+
+3. Change **DB_DATABASE** and **DB_USERNAME** to **default** in `/.env`
+
+##### Close all running Containers
+
+```sh
+$ docker-compose stop
+```
+
+To stop single container do:
+
+```sh
+$ docker-compose stop {container-name}
+```
+
+##### Delete all existing Containers
+
+```sh
+$ docker-compose down
+```
+
+### Migrate
+
+In the project folder
+
+```sh
+$ php artisan migrate
 ```
 
 ## Development
